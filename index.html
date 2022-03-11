@@ -20,7 +20,7 @@
 			</div>
 
 			<div class="thumbs">
-				<div v-for="(element, arrayIndex) in arrayFoto" class="thumb">
+				<div v-for="(element,index) in arrayFoto" class="thumb" :class="arrayIndex==index ? 'thumb active' : ''">
 					<img :src="'img/' + element.immagine" :alt="element.titolo">
 				</div>
 				
