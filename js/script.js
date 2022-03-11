@@ -35,16 +35,16 @@ const app = new Vue ({
         methods: {
             addIndex(arrayIndex, arrayFoto) {
                 if (arrayIndex < arrayFoto.length - 1){
-                this.arrayIndex++
+                this.arrayIndex++;
             }else {
-                arrayIndex==0; 
+                this.arrayIndex = 0; 
             }
             },
             removeIndex(arrayIndex, arrayFoto) {
-                if (arrayIndex==0){
-                    arrayIndex==arrayFoto.length - 1 
+                if (arrayIndex == 0){
+                    this.arrayIndex = arrayFoto.length - 1;
                 }else {
-                this.arrayIndex--
+                this.arrayIndex--;
             }
             },
 
