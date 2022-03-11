@@ -1,6 +1,7 @@
 const app = new Vue ({
         el: '#root',
         data: {
+            arrayIndex: 0,
             arrayFoto:[
                 {
                     immagine: '01.jpg',
@@ -30,6 +31,28 @@ const app = new Vue ({
 
             ],
         },
+
+        methods: {
+            addIndex(arrayIndex, arrayFoto) {
+                if (arrayIndex < arrayFoto.length - 1){
+                this.arrayIndex++
+            }else {
+                arrayIndex==0; 
+            }
+            },
+            removeIndex(arrayIndex, arrayFoto) {
+                if (arrayIndex==0){
+                    arrayIndex==arrayFoto.length - 1 
+                }else {
+                this.arrayIndex--
+            }
+            },
+
+        },
+
+
+
+    })    
+
         
     
-    })
