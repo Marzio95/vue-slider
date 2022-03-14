@@ -50,11 +50,10 @@ const app = new Vue({
             }
         },
 
-
-
-
-
-
+        mouseOver(index){
+        this.arrayIndex = index;
+        }
+    
 
     },
 
@@ -66,7 +65,8 @@ const app = new Vue({
                 this.arrayIndex = 0;
             }
         }, 3000); 
-    }     
+    },     
+
 
 
 
